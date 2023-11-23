@@ -8,6 +8,7 @@ vim /etc/hosts
 =>vim /etc/ssh/sshd_config
 permitrootlogin yes
 PasswordAuthentication yes
+PubkeyAuthentication yes
 
 =>systemctl restart sshd
 
@@ -15,7 +16,9 @@ PasswordAuthentication yes
 passwd root
 
 ssh-keygen
+
 ssh-copy-id -i root@serverA private ip
+
 ssh-copy-id -i root@serverB private ip
 
 
