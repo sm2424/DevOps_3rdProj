@@ -9,8 +9,11 @@ vim /etc/hosts
 **=>vim /etc/ssh/sshd_config**
 
 permitrootlogin yes
+
 PasswordAuthentication yes
+
 PubkeyAuthentication yes
+
 
 **=>systemctl restart sshd**
 
